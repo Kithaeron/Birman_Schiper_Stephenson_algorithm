@@ -68,10 +68,10 @@ pip install -r requirements.txt
 ```
 Run algorithm:
 ```bash
-python3.8 -u src/main.py 0 &
-python3.8 -u src/main.py 1 &
+python -u src/main.py 0 &
+python -u src/main.py 1 &
 # As many commands as there are nodes in your algorithm/implementation
-python3.8 -u src/main.py n &
+python -u src/main.py n &
 ```
 
 Expected output is the same as when running with docker-compose.
