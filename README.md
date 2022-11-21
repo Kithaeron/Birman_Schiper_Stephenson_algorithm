@@ -1,3 +1,14 @@
+# How to test this branch
+Open three terminals.
+Each type in one of the following commands:
+python -u src/main.py 0
+python -u src/main.py 1
+python -u src/main.py 2
+
+
+
+
+
 # Python Template
 This code is offered as a template for the course IN4150.
 This template is tested on Ubuntu 20.04 (should also work on Windows and Mac OSX).
