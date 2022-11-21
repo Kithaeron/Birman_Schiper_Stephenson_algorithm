@@ -1,8 +1,11 @@
 # How to test this branch
 Open three terminals.
 Each type in one of the following commands:
+
 python -u src/main.py 0
+
 python -u src/main.py 1
+
 python -u src/main.py 2
 
 
