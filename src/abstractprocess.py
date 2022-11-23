@@ -69,8 +69,8 @@ class AbstractProcess(ABC):
     buffer = None
     # Variables to control the random delay each process has while executing the algorithm
     # Set both to 0 to remove any delays
-    delay_min = 0
-    delay_max = 1
+    delay_min = 1
+    delay_max = 5
 
     def __init__(self, idx: int, addresses):
         self.idx = idx
@@ -98,7 +98,9 @@ class AbstractProcess(ABC):
             min_time = self.delay_min
             max_time = self.delay_max
         delay_time = random.uniform(min_time, max_time)
+
         await asyncio.sleep(delay_time)
+        #print("delay_time", delay_time)
 
     async def send_message(self, m: Message, to: int):
         """
