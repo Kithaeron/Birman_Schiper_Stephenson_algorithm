@@ -23,7 +23,7 @@ class EchoProcess(AbstractProcess):
     The variables first_cycle and num_echo are examples of variables custom to the EchoProcess algorithm.
     """
     # first_cycle = True
-    num_msg = 14
+    num_msg = 8
     send_counter = 0 
     rcv_counter = 0
     clock_vec = []
